@@ -100,6 +100,6 @@ var SwaggerInfo = &swag.Spec{
 	// RightDelim:       "}}",
 }
 
-func init() {
+func init() { 
 	swag.Register(SwaggerInfo.InstanceName(), SwaggerInfo)
 }

@@ -5,6 +5,7 @@ services:
     ports:
       - "8888:8080"
     environment:
-      - SWAGGER_JSON=/docs/swagger.yaml
+      - SWAGGER_JSON=/docs/swagger.yaml 
+      
     volumes:
       - ./swagger.yaml:/docs/swagger.yamlnpm install -g @redocly/cli

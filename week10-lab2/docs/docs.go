@@ -68,7 +68,7 @@ const docTemplate = `{
             "properties": {
                 "message": {
                     "type": "string"
-                }
+                } 
             }
         }
     }

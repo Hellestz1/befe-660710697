@@ -16,7 +16,7 @@ import (
 // @host            localhost:9999
 // @BasePath        /api/v1
 func main() {
-	r := gin.Default()
+	r := gin.Default() 
     r.Use(cors.Default())
 	// Swagger endpoint
 	r.GET("/docs/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))

@@ -20,6 +20,6 @@ type ErrorResponse struct {
 // @Failure 404  {object}  ErrorResponse
 // @Router  /books/{id} [get]
 func GetBookByID(c *gin.Context) {
-	id := c.Param("id")
+	id := c.Param("id") 
 	c.JSON(200, gin.H{"id": id, "name": "ณัฐโชติ พรหมฤทธิ์"})
 }

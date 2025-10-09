@@ -20,7 +20,7 @@
                 ],
                 "summary": "Get book by ID",
                 "parameters": [
-                    {
+                    { 
                         "type": "integer",
                         "description": "Book ID",
                         "name": "id",

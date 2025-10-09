@@ -20,7 +20,7 @@ info:
   version: "1.0"
 paths:
   /books/{id}:
-    get:
+    get: 
       description: Get details of a book by ID
       parameters:
       - description: Book ID

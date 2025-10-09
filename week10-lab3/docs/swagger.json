@@ -16,7 +16,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Books"
+                    "Books" 
                 ],
                 "summary": "Get all book",
                 "responses": {

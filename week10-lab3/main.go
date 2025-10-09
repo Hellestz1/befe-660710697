@@ -22,7 +22,7 @@ func getEnv(key, defaultValue string)string {
 	return defaultValue
 }
 
-var db *sql.DB
+var db *sql.DB 
 func initDB(){
 	var err error
 	host := getEnv("DB_HOST", "")
