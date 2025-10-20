@@ -3,6 +3,7 @@ import BookCard from '../components/BookCard';
 import SearchBar from '../components/SearchBar';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { ChevronDownIcon } from '@heroicons/react/outline';
+import { useNavigate } from 'react-router-dom';
 
 
 const AllBookPage = () => {
@@ -13,6 +14,7 @@ const AllBookPage = () => {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const booksPerPage = 12;
+  const navigate = useNavigate();
   
   const categories = [
     'all', 'fiction', 'non-fiction', 'science', 'history', 'art', 
@@ -169,7 +171,7 @@ const AllBookPage = () => {
         {currentBooks.length > 0 ? (
           <div >
             {currentBooks.map(book => (
-              <p>{book.id} {book.title} <button className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-200">update</button>
+              <p>{book.id} {book.title} {book.author} {book.year} {book.price} <button className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-200">update</button>
               <button className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-200">delete</button></p> 
             ))}
           </div>
@@ -178,6 +180,7 @@ const AllBookPage = () => {
             <p className="text-gray-500 text-lg">ไม่พบหนังสือที่ค้นหา</p>
           </div>
         )}
+        <button onClick={() => navigate('/store-manager/add-book')} className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-200">add book</button>
         
         {/* Pagination */}
         {totalPages > 1 && (

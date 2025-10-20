@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 	"time"
-	//_ "week10-lab3/docs"
+	_ "week11-lab1/docs"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"

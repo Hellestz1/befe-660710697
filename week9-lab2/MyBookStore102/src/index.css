@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap');
+@@ -0,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -17,7 +17,7 @@
 @layer components {
   /* Custom component classes */
   .btn-primary {
-    @apply px-6 py-3 bg-viridian-600 text-white font-semibold rounded-lg hover:bg-viridian-700 transition-colors duration-200 transform hover:scale-105;
+    @apply px-6 py-3 bg-viridian-600 text-black font-semibold rounded-lg hover:bg-red-700 transition-colors duration-200 transform hover:scale-105;
   }
   
   .btn-secondary {

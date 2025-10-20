@@ -104,7 +104,7 @@ const AddBookPage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/v1/books/', {
+      const response = await fetch('http://localhost:8080/api/v1/books/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -138,6 +138,7 @@ const AddBookPage = () => {
       setTimeout(() => setSuccessMessage(''), 5000);
     } catch (error) {
       setErrors({ submit: 'เกิดข้อผิดพลาดในการเพิ่มหนังสือ: ' + error.message });
+    
     } finally {
       setIsSubmitting(false);
     }
@@ -318,7 +319,7 @@ const AddBookPage = () => {
                 </button>
                 <button
                   type="button"
-                  onClick={() => navigate('/')}
+                  onClick={() => navigate('/store-manager/all-book')}
                   className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold
                     text-gray-700 hover:bg-gray-50 transition-colors"
                 >

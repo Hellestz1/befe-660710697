@@ -23,7 +23,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-viridian-600 to-green-700 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-green-400 to-green-700 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-green-400">
       <div className="max-w-md w-full space-y-8">
         <div>
           <div className="mx-auto h-16 w-16 bg-white rounded-full flex items-center justify-center">
@@ -37,7 +37,7 @@ const LoginPage = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-2xl p-8">
+        <div className="bg-red-400 rounded-xl shadow-2xl p-8">
           <form className="space-y-6" onSubmit={handleSubmit}>
             {error && (
               <div className="bg-red-50 border border-red-400 text-red-700 px-4 py-3 rounded-lg">
@@ -95,7 +95,7 @@ const LoginPage = () => {
               <button
                 type="submit"
                 className="w-full flex justify-center py-3 px-4 border border-transparent
-                  rounded-lg shadow-sm text-sm font-medium text-white bg-viridian-600
+                  rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600
                   hover:bg-viridian-700 focus:outline-none focus:ring-2 focus:ring-offset-2
                   focus:ring-viridian-500 transition-colors duration-200"
               >
